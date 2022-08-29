@@ -14,7 +14,7 @@
 
 ## Screenshots
 
-![](https://i.postimg.cc/2js6sMyh/1.png)![](https://i.postimg.cc/CxYK18jK/2.png)
+![1](https://i.postimg.cc/2js6sMyh/1.png)![2](https://i.postimg.cc/CxYK18jK/2.png)
 
 
 ## Installation
