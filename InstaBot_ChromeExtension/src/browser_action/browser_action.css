@@ -1,0 +1,229 @@
+@font-face {
+    font-family: "Carol-bold";
+    src: url("../webfontkit/carrol-wild-carrol-wild-clean-400-webfont.woff") format("woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Carol";
+    src: url("../webfontkit/carrol-wild-carrol-wild-clean-400-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Exo";
+    src: url("../webfontkit/exo-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Exo-bold";
+    src: url("../webfontkit/exo-bold-webfont.woff") format("woff");
+}
+
+.tabcontent {
+    padding: 20px;
+    height: 200px;
+    width: 400px;
+    font-family: Exo, Carol, Helvetica, Ubuntu, Arial, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h1 {
+    padding-top: 20px;
+    font-size: 3em;
+    font-family: Exo-bold, Carol-bold;
+    text-align: center;
+}
+
+img {
+    width: 25%;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.button-class,
+#username,
+#input,
+#password {
+    align-self: center;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Exo, Carol, Neucha, sans-serif;
+    font-size: 1.5rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-bottom: 20px;
+}
+
+#username,
+#input,
+#password {
+    width: 80%;
+    height: 40px;
+    text-align: center;
+}
+
+#logout_button {
+    margin: auto;
+}
+
+.button-class:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.button-class:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #41403e;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(24px, 0);
+    }
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.tabitem {
+    margin: 0px 15px 0px 15px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px 6px 15px;
+    transition: 0.3s;
+    font-family: Exo, Carol, Neucha, sans-serif;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 30px;
+    position: relative;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.tabitem button:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: #8C076E;
+    -webkit-transition: .5s;
+    transition: .5s
+}
+
+.tabitem button:last-child {
+    margin-right: 0px;
+}
+
+.tabitem button:hover:before {
+    width: 100%;
+}
+
+.tabitem button.active:before {
+    width: 100%;
+}
+
+/* Change background color of buttons on hover */
+.tabitem button:hover {
+    background-color: #ddd;
+}
+
+#message {
+    padding: 10px 10px 40px 10px;
+}

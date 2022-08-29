@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="browser_action.css">
+</head>
+
+<body>
+	<h1>Instagram Bot Detector</h1>
+	<!-- Tab links -->
+	<div class="tab">
+		<div class="tabitem">
+			<button class="active" id="tablogin">Login</button>
+		</div>
+		<div class="tabitem">
+			<button id="tabsearch">Search</button>
+		</div>
+	</div>
+	<div id="login" class="tabcontent" style="display: block;">
+		<div id="login_form" style="display: block;">
+			<input type="text" id="username" placeholder="username" required /><br>
+			<input type="password" id="password" placeholder="password" required /><br>
+			<button id="login_button" class="button-class" role="button">Login</button>
+		</div>
+		<button id="logout_button" class="button-class" role="button" style="display: none;">Logout</button>
+	</div>
+	<div id="search" class="tabcontent" style="display: none;">
+		<input type="text" id="input" placeholder="Enter username here!" required /><br>
+		<button id="check-account" class="button-class" role="button">Detection</button>
+		<div id="result" style="font-weight: bolder;"></div>
+		<div id="loading" class="lds-ellipsis" style="visibility: hidden;">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<img src="../../logos/logo.png" alt="logo">
+	<script src="browser_action.js"></script>
+</body>
+
+</html>
