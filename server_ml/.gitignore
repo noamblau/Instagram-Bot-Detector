@@ -1,0 +1,7 @@
+venv_build
+venv_build/*
+instabot/build
+instabot/build/*
+instabot/__pycache__
+instabot/MLFiles/__pycache__
+instabot/.idea

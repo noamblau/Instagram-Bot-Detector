@@ -1,0 +1,1 @@
+PowerShell -Command Start-Process %~f0\..\instabotserver.exe -WindowStyle Hidden
